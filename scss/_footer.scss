@@ -1,0 +1,67 @@
+
+footer{
+    background-color: $primary-colour;
+    color: $secondary-colour;
+    padding: 1em;
+
+
+    .foot-sec-1{
+        display: flex;
+        place-content: space-between;
+        li{
+            padding-bottom: 1em;
+
+            a:hover{
+                color: $forth-colour;
+            }
+        }
+
+        .contact-numbers{
+            .numb{
+                padding-bottom: 1em;
+            }
+            svg{
+                width: 1em;
+            }
+        }
+
+
+        .social-media{
+            li{
+                padding: 0.5em;
+                svg{
+                    width: 1.5em;
+                }
+            }
+        }
+    }
+
+    .foot-sec-2{
+        display: flex;
+        width: 100%;
+        padding: 0 2em;
+
+
+        .office-address{
+            flex: 1;
+            font-size: 0.8em;
+
+
+                svg{
+                    display: inline;
+                }
+                p{
+                    display: inline;
+                }
+
+            
+               
+        }
+
+    }
+    .downtext{
+        padding-top: 4em;
+        text-align: center;
+        font-size: 0.7em;
+    }
+}     

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$primary-colour: #0000AC;
+$secondary-colour: white;
+$ternary-colour: black;
+$forth-colour: rgb(0, 247, 255);
+$fifth-colour: rgb(153, 139, 139);
+
+$font-fam: 'Poppins', sans-serif;
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: $secondary-colour;
+
+    &:hover{
+        color: $secondary-colour;
+    }
+}
+.active{
+    color: $forth-colour;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-fam;
+
+}
