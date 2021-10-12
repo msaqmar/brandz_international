@@ -3,6 +3,7 @@
 @import 'footer';
 @import 'about';
 @import 'contact';
+@import 'product';
 
 
 .top-quote{
@@ -128,13 +129,7 @@
                     width: 100%;
                 }
 
-                .read-more-btn{
-                    padding: 0.5em 1em;
-                    background-color: $primary-colour;
-                    color: $secondary-colour;
-                    
-                }
-
+                
 
 
             }

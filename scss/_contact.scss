@@ -10,9 +10,46 @@
 
 
 .contact-sec-section{
-    svg{
-        color: $primary-colour;
-        width: 1em;
+    
+    color: $primary-colour;
+    &-sub{
+        margin: 0 auto;
+        width: 60%;
+        padding: 1em;
+        div{
+            padding: 1em;
+            
+            svg{
+                width: 2em;
+            }
+            span{
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+        }
+        
     }
+    
 
+}
+
+.contact-third-section{
+    color: $secondary-colour;
+    width: 100%;
+
+    .callback-form{
+        
+        background-color: $primary-colour;
+        padding: 2em;
+        width: 80%;
+        margin: 1em auto;
+
+
+        .submit-btn{
+            padding: 0.5em 2em;
+            margin: 0 auto;
+            background-color: $secondary-colour;
+            color: $primary-colour;
+        }
+    }
 }
