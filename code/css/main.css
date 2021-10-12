@@ -305,6 +305,14 @@ footer .downtext {
   color: #0000AC;
 }
 
+.cover-div {
+  background-image: url(../images/1.jpg);
+}
+
+.cover-div svg {
+  width: 2em;
+}
+
 .top-quote {
   height: 2em;
   background-color: #0000AC;
