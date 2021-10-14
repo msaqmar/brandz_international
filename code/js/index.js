@@ -7,7 +7,7 @@ function openMenuFunc(){
 }
 
 function showSearch(){
-    document.querySelector(".search-inp").style.display = "inline-block";
+    document.querySelector("#srch-inp").style.display = "inline-block";
 }
 
 function searchFunc() {
@@ -21,13 +21,14 @@ function searchFunc() {
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
+            document.getElementById("not-found").style.display = "none";
         } else {
             li[i].style.display = "none";
+            document.getElementById("not-found").style.display = "block";
         }
     }
 }
 
 
-////////////FOR ITEMS////////////////////////////////////////////////////////////////
 
 

@@ -9,6 +9,7 @@
         color: $primary-colour;
     }
 }
+
 .navlist{
     height: 100vh;
     width: 100vw;
@@ -43,5 +44,39 @@
         }
 
         
+    }
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+////////////// media queries//////////////////
+
+@media only screen and (min-width: 768px){
+    .menu-div{
+        svg{
+            display: none;
+        }
+    }
+    .nav-list{
+        display: flex;
+        width: 60%;
+        float: right;
+        padding: 1em;
+        place-content: space-between;
+        a{
+          color: $primary-colour;
+        }
+    }
+
+    .navlist{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .nav-list{
+        display: none;
     }
 }

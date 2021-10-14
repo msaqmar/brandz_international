@@ -18,6 +18,7 @@
         padding: 1em;
         div{
             padding: 1em;
+            text-align: center;
             
             svg{
                 width: 2em;
@@ -43,6 +44,7 @@
         padding: 2em;
         width: 80%;
         margin: 1em auto;
+        
 
 
         .submit-btn{
@@ -52,4 +54,20 @@
             color: $primary-colour;
         }
     }
+}
+
+@media screen and (min-width: 768px){
+    .contact-page{
+        display: flex;
+        width: 100%;
+        padding: 2em;
+        
+        .contact-main-section{
+            margin: auto 0; 
+            img{
+                width: 100%;
+            }   
+        }
+    }
+    
 }

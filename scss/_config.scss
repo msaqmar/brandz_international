@@ -5,6 +5,10 @@ $secondary-colour: white;
 $ternary-colour: black;
 $forth-colour: rgb(0, 247, 255);
 $fifth-colour: rgb(153, 139, 139);
+$sixth-colour: #A19CAA;
+$seventh-colour: #fdfdfd;
+$eightth-colour: #a4a4e7;
+$nineth-colour: #f8f8f8;
 
 $font-fam: 'Poppins', sans-serif;
 
@@ -41,6 +45,25 @@ body{
 
     &:hover{
         background-color: $forth-colour;
+    }
+    
+}
+
+.brandzname{
+    color: $seventh-colour;
+}
+
+
+@media only screen and (min-width: 768px){
+    
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .active{
+        text-decoration: underline;
+        font-size: 1em;
+        color: $secondary-colour;
     }
     
 }

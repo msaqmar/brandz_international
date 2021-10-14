@@ -2,8 +2,8 @@
         
 
     color: $primary-colour;
-    padding: 2em 0;
     text-align: center;
+    padding: 1em;
     h1{
         padding: 1em;
         text-align: start;
@@ -18,27 +18,79 @@
 
 .about-sec-section{
     color: $secondary-colour;
-    text-align: center;
     h1{
         text-align: right;
         padding: 1em;
         background-color: $primary-colour;
     }
-    img{
-        width: 20em;
+    .service-1, .service-2, .service-3{
+        padding: 1em;
+        width: 70vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        
+        .img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .p{
+            color: $primary-colour;
+            text-align: left;
+            padding: 1em;
+            font-size: 1.5em;
+            margin: 0 auto;
+            
+        }
     }
+    
 }
 
 
 .about-third-section{
     color: $primary-colour;
+    text-align: center;
 
     h1{
+        text-align: left;
         padding: 1em;
     }
 
     img{
-        width: 20em;
+        width: 60vw;
         padding: 1em;
     }
+}
+
+
+@media screen and (min-width: 768px){
+    
+    .about-main-section, .about-third-section{
+        text-align: left;
+    }
+    
+    .about-sec-section{
+        .service-1, .service-3{
+            flex-direction: row;
+        }
+        .service-2{
+            flex-direction: row-reverse;
+        }
+
+        .service-1, .service-2, .service-3{
+            width: 80vw;
+            .img, .p{
+                width: 50%;
+            }
+            .p{
+                margin: auto 0;
+                padding: 1em;
+                font-size: 1.5em;
+            }
+        }
+        
+    }
+    
 }

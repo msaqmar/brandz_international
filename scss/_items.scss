@@ -1,7 +1,116 @@
-.cover-div{
-    background-image: url(../images/1.jpg);
+.mask-section{
+    height: 100%;
+    width: 100%;
+    background-color: $sixth-colour;
 
-    svg{
-        width: 2em;
+        .cover-div{
+            background-image: linear-gradient(to right, rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/1.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 40vh;
+        
+            
     }
+
+        
+    }
+
+    .srch-div{
+        .srch-icon{
+            width: 2em;
+            position: absolute;
+            right: 1em;
+            top: 1em;
+        }
+
+        .search-input{
+            font-size: 1.2em;
+            padding: 0.5em;
+            border-radius: 1em;
+            border: 1px solid $fifth-colour;
+            width: 60%;
+            position: relative;
+            top: 0.5em;
+            left: 30%;
+            display: none;
+        }
+    }
+    
+    
+    .h1{
+        position: absolute;
+        top: 15vh;
+        left: 10%;
+        
+    }
+    
+
+.svg{
+    width: 2em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+    .item-div{
+        margin: 0 auto;
+        padding: 0 0 2em 0;
+        width: 70vw;
+        height: 100%;
+        position: relative;
+        top: -10vh;
+        border: 1px solid $fifth-colour;
+        background-color: $secondary-colour;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+        .item{
+            padding: 1em;
+            border: 1px solid $fifth-colour;
+            margin: 2em auto 0 auto;
+            width: 80%;
+            h3{
+                padding: 0.5em;
+                margin: 0;
+            }
+            img{
+                width: 100%;
+            }
+            
+                p{
+                text-align: left;
+                font-size: 0.7em;
+
+                }
+            
+        }
+    }
+
+
+.sanitizer-section{
+    height: 100%;
+    width: 100%;
+    background-color: $sixth-colour;
+
+    .cover-div{
+        background-image: linear-gradient(to right, rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/10.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+        .item-div{
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80vw;
+
+            .item{
+                width: 30%;
+            }
+        }
+    
 }

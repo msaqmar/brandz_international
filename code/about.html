@@ -14,25 +14,32 @@
 <body>
 
     <!---------------- FIRST SECTION------------ -->
+    <header>
+        <nav>
+            <div class="menu-div">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list hambmenu" viewBox="0 0 16 16" onclick="openMenuFunc()">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </div>
+            
+            <ul class="navlist">
+                <img class="cross-icon" src="../images/icons/Icon metro-cross.svg" alt="" onclick="closeFunc()">
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a class="" href="product.html">Products</a></li>
+                <li><a class="active" href="about.html">About us</a></li>
+                <li><a class="" href="contact.html">Contact us</a></li>
+            </ul>
+            <div class="nav-list">
+                <a class="" href="index.html">Home</a>
+                <a class="" href="product.html">Products</a>
+                <a class="active" href="about.html">About us</a>
+                <a class="" href="contact.html">Contact us</a>
+            </div>
+        </nav>
+    </header>
 
     <div class="about-main-section">
-        <header>
-            <nav>
-                <div class="menu-div">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list hambmenu" viewBox="0 0 16 16" onclick="openMenuFunc()">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
-                </div>
-                
-                <ul class="navlist">
-                    <img class="cross-icon" src="../images/icons/Icon metro-cross.svg" alt="" onclick="closeFunc()">
-                    <li><a class="" href="index.html">Home</a></li>
-                    <li><a class="" href="product.html">Products</a></li>
-                    <li><a class="active" href="about.html">About us</a></li>
-                    <li><a class="" href="contact.html">Contact us</a></li>
-                </ul>
-            </nav>
-        </header>
+        
         
         <h1><u>Mission</u></h1>
         <img src="../images/17.jpg" alt="">
@@ -45,13 +52,20 @@
 
 
 <div class="about-sec-section">
-    <div class="hd">
         <h1><u>Services</u></h1>
-        <img src="../images/13.jpg" alt="">
-        <img src="../images/14.jpg" alt="">
-        <img src="../images/16.jpg" alt="">
+        <div class="service-1">
+            <div class="img"><img src="../images/13.jpg" alt=""></div>
+            <div class="p"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste libero sunt reiciendis obcaecati facere sed!</p></div>
+        </div>
+        <div class="service-2">
+            <div class="img"><img src="../images/14.jpg" alt=""></div>
+            <div class="p"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste libero sunt reiciendis obcaecati facere sed!</p></div>
+        </div>
+        <div class="service-3">
+            <div class="img"><img src="../images/16.jpg" alt=""></div>
+            <div class="p"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste libero sunt reiciendis obcaecati facere sed!</p></div>
+        </div>
 
-    </div>
 </div>
 
 
@@ -73,7 +87,7 @@
         <nav>
             <ul>
                 <li><a class="" href="index.html">Home</a></li>
-                <li><a class="" href="products.html">Products</a></li>
+                <li><a class="" href="product.html">Products</a></li>
                 <li><a class="" href="about.html">About us</a></li>
                 <li><a class="" href="contact.html">Contact us</a></li>
             </ul>

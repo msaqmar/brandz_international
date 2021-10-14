@@ -1,8 +1,19 @@
-function itemFunc(){
-    var val = document.querySelector("#view-products").value;
-    if(val == "mask"){ 
-        document.querySelector(".mask-section").style.display = "block";
-        window.location.href = "/code/itemspage.html";  
+function itemFunc(val){
+    
+    if(val == "mask"){
+        window.location.href = "/code/mask.html";     
+    }
+    if(val == "sanitizer"){ 
+        
+        window.location.href = "/code/sanitizer.html"; 
+        
     }
     
+}
+
+
+
+function backtopage(){
+
+   window.location.href = "/code/product.html"
 }

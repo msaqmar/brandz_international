@@ -1,3 +1,4 @@
+
 @import 'config';
 @import 'menu';
 @import 'footer';
@@ -5,6 +6,7 @@
 @import 'contact';
 @import 'product';
 @import 'items';
+
 
 
 .top-quote{
@@ -15,11 +17,25 @@
 
 
 ///////////MAIN SECTIONS //////////////////////////////////
+
 .main-section{
-    height: 100vh;
+    height: 70vh;
     background-image: linear-gradient( rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/25.jpg);
     background-size: cover;
     background-position: center;
+
+    .menu-div{
+        svg{
+            
+            color: $secondary-colour;
+        }
+    }
+
+    .nav-list{
+        a{
+          color: $secondary-colour;
+        }
+    }
 
 
 
@@ -31,22 +47,20 @@
         margin: 0;
         padding: 1em;
         position: relative;
-        top: 5em;
+        top: 3vh;
+        
         
 
         .hh1{
             font-weight: bold;
-            font-size: 1.5em;
             color: $primary-colour;
-            
-            
-            
+         
             
         }
         
     }
     .hr-one{
-        border: 1px solid white;
+        background-color: antiquewhite;
         opacity: 100;
     }
 
@@ -71,10 +85,11 @@
 .second-section{
     width: 100%;
     text-align: center;
-    padding: 2em 0;
+    padding: 2em;
+    background-color: $nineth-colour;
 
     img{
-        width: 20em;
+        width: 70vw;
     }
 }
 
@@ -84,6 +99,7 @@
  .third-section{
     width: 100%;
     color: $primary-colour;
+    background-color: $nineth-colour;
 
     
     .marquee{
@@ -94,17 +110,17 @@
 
         .marquee-content{
             display: flex;
-            width: 80vw;
+            width: 70vw;
             text-align: center;
             color: $primary-colour;
-            animation: scrolling 10s infinite linear;
+            animation: scrolling 30s infinite linear;
 
             @keyframes scrolling {
                 0%{
                     transform: translateX(100%);
                 }
                 100%{
-                    transform: translateX(-280%);
+                    transform: translateX(-480%);
                 }
             }
 
@@ -115,14 +131,19 @@
                 margin: 1em 2em;
                 flex-shrink: 0;
                 border: 1px solid $fifth-colour;
-                padding: 1em;
-                white-space: nowrap;
+                padding: 0 1em;
+                text-align: left;
+                background-color: $eightth-colour;
+                // white-space: nowrap;
+                overflow: wrap;
 
-                span{
-                    color: $fifth-colour;
-                }
+                
                 p{
                     color: $ternary-colour;
+                }
+
+                .quote{
+                    font-size: 5em;
                 }
                 
 
@@ -142,8 +163,41 @@
 }
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       /////////////////Media queries//////////////////////////
 
-       
+@media only screen and (min-width: 768px){
+    
+        .top-quote{
+            height: 3em;
+        }
+
+        .main-section{
+            height: 85vh;
+            .heading-div{
+                padding-left: 7em;
+                width: 70%;
+                top: 15vh;
+
+                
+            }
+        }
+
+        .second-section{
+            text-align: left;
+            img{
+                width: 35%;
+            }
+        }
+
+        .third-section{
+            .marquee{
+                .marquee-content{
+                    width: 30%
+                }
+            }
+        }
+    }
         
 
     
