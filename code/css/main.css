@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Source+Serif+Pro&display=swap");
 ul {
   list-style-type: none;
 }
@@ -13,7 +14,7 @@ a:hover {
 }
 
 .active {
-  color: #00f7ff;
+  color: #baf8f8;
   font-size: 1.3em;
   font-weight: bold;
 }
@@ -28,12 +29,12 @@ body {
 
 .read-more-btn {
   padding: 0.5em 1em;
-  background-color: #0000AC;
+  background-color: #000000;
   color: white;
 }
 
 .read-more-btn:hover {
-  background-color: #00f7ff;
+  background-color: #baf8f8;
 }
 
 .brandzname {
@@ -60,13 +61,13 @@ body {
 .menu-div svg {
   width: 3em;
   height: 3em;
-  color: #0000AC;
+  color: #000000;
 }
 
 .navlist {
   height: 100vh;
   width: 100vw;
-  background-color: #0000AC;
+  background-color: #000000;
   text-align: center;
   color: white;
   padding-top: 7em;
@@ -96,24 +97,31 @@ body {
 
 .navlist li:hover {
   font-weight: bold;
-  color: #0000AC;
+  color: #000000;
 }
 
 @media only screen and (min-width: 768px) {
   .menu-div svg {
     display: none;
   }
-  .nav-list {
+  .nav-list-main {
+    width: 100%;
+    background-color: #000000;
+  }
+  .nav-list-main .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 60%;
-    float: right;
-    padding: 1em;
-    place-content: space-between;
+    margin: 0;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding: 0.5em 2em;
+    font-size: 1.2em;
   }
-  .nav-list a {
-    color: #0000AC;
+  .nav-list-main .nav-list a {
+    padding-left: 10vw;
+    color: white;
   }
   .navlist {
     display: none;
@@ -127,7 +135,7 @@ body {
 }
 
 footer {
-  background-color: #0000AC;
+  background-color: #000000;
   color: white;
   padding: 1em;
 }
@@ -144,7 +152,11 @@ footer .foot-sec-1 li {
 }
 
 footer .foot-sec-1 li a:hover {
-  color: #00f7ff;
+  color: #baf8f8;
+}
+
+footer .foot-sec-1 .contact-numbers {
+  margin: auto 0;
 }
 
 footer .foot-sec-1 .contact-numbers .numb {
@@ -197,19 +209,59 @@ footer .downtext {
   font-size: 0.7em;
 }
 
-.about-main-section {
-  color: #0000AC;
-  text-align: center;
-  padding: 1em;
+@media screen and (min-width: 768px) {
+  footer {
+    font-size: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    place-content: space-between;
+  }
+  footer .foot-sec-1 {
+    width: 60%;
+  }
+  footer .foot-sec-2 {
+    width: 40%;
+  }
+  footer .foot-sec-2 .office-address {
+    width: 100%;
+  }
+  footer .downtext {
+    width: 100%;
+  }
 }
 
-.about-main-section h1 {
+h1 {
   padding: 1em;
   text-align: start;
 }
 
+.about-main-section {
+  color: #000000;
+  text-align: center;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .about-main-section img {
-  width: 20em;
+  padding: 1em;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.about-main-section p {
+  font-family: 'Italianno', cursive;
+  font-family: 'Source Serif Pro', serif;
+  padding: 1em;
+  font-size: 1.5em;
 }
 
 .about-sec-section {
@@ -218,13 +270,14 @@ footer .downtext {
 
 .about-sec-section h1 {
   text-align: right;
-  padding: 1em;
-  background-color: #0000AC;
+  padding: 0 1em;
+  margin: 0;
+  background-color: #000000;
 }
 
 .about-sec-section .service-1, .about-sec-section .service-2, .about-sec-section .service-3 {
   padding: 1em;
-  width: 70vw;
+  width: 80vw;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,15 +297,16 @@ footer .downtext {
 }
 
 .about-sec-section .service-1 .p, .about-sec-section .service-2 .p, .about-sec-section .service-3 .p {
-  color: #0000AC;
-  text-align: left;
-  padding: 1em;
+  color: #000000;
+  width: 100%;
+  text-align: justify;
+  padding: 1em 0;
   font-size: 1.5em;
   margin: 0 auto;
 }
 
 .about-third-section {
-  color: #0000AC;
+  color: #000000;
   text-align: center;
 }
 
@@ -262,11 +316,30 @@ footer .downtext {
 }
 
 .about-third-section img {
-  width: 60vw;
+  width: 70vw;
   padding: 1em;
 }
 
+.about-third-section p {
+  font-size: 1em;
+  text-align: justify;
+  padding: 0.5em;
+}
+
 @media screen and (min-width: 768px) {
+  .about-main-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-main-section img {
+    width: 40vw;
+  }
+  .about-main-section p {
+    margin: auto 0;
+    font-size: 2em;
+  }
   .about-main-section, .about-third-section {
     text-align: left;
   }
@@ -285,12 +358,24 @@ footer .downtext {
   .about-sec-section .service-1, .about-sec-section .service-2, .about-sec-section .service-3 {
     width: 80vw;
   }
-  .about-sec-section .service-1 .img, .about-sec-section .service-1 .p, .about-sec-section .service-2 .img, .about-sec-section .service-2 .p, .about-sec-section .service-3 .img, .about-sec-section .service-3 .p {
-    width: 50%;
+  .about-sec-section .service-1 .img, .about-sec-section .service-2 .img, .about-sec-section .service-3 .img {
+    width: 40%;
+    margin: auto 0;
   }
   .about-sec-section .service-1 .p, .about-sec-section .service-2 .p, .about-sec-section .service-3 .p {
+    width: 60%;
     margin: auto 0;
     padding: 1em;
+    font-size: 1.5em;
+  }
+  .about-third-section {
+    text-align: center;
+    padding: 2em;
+  }
+  .about-third-section img {
+    width: 50vw;
+  }
+  .about-third-section p {
     font-size: 1.5em;
   }
 }
@@ -305,7 +390,7 @@ footer .downtext {
 }
 
 .contact-sec-section {
-  color: #0000AC;
+  color: #000000;
 }
 
 .contact-sec-section-sub {
@@ -334,7 +419,7 @@ footer .downtext {
 }
 
 .contact-third-section .callback-form {
-  background-color: #0000AC;
+  background-color: #000000;
   padding: 2em;
   width: 80%;
   margin: 1em auto;
@@ -344,7 +429,7 @@ footer .downtext {
   padding: 0.5em 2em;
   margin: 0 auto;
   background-color: white;
-  color: #0000AC;
+  color: #000000;
 }
 
 @media screen and (min-width: 768px) {
@@ -376,7 +461,7 @@ footer .downtext {
 }
 
 .srch .search-icon {
-  color: #0000AC;
+  color: #000000;
   width: 2em;
 }
 
@@ -391,7 +476,7 @@ footer .downtext {
 
 .product-main-section h2 {
   padding: 1em;
-  color: #0000AC;
+  color: #000000;
 }
 
 .product-main-section .product-main-div {
@@ -423,12 +508,13 @@ footer .downtext {
 
 .product-main-section .product-main-div .category-div .img-div img {
   width: 100%;
+  height: 60%;
   margin-bottom: 1em;
 }
 
 .product-main-section .product-main-div .category-div .img-div span {
   font-size: 2em;
-  color: #0000AC;
+  color: #000000;
 }
 
 #not-found {
@@ -457,8 +543,8 @@ footer .downtext {
 }
 
 .mask-section .cover-div {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(221, 207, 207, 0.418)), to(rgba(0, 0, 0, 0.637))), url(../../images/1.jpg);
-  background-image: linear-gradient(to right, rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/1.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(165, 144, 144, 0.418)), to(rgba(102, 94, 94, 0.637))), url(../../images/1.jpg);
+  background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url(../../images/1.jpg);
   background-position: center;
   background-size: cover;
   height: 40vh;
@@ -536,15 +622,71 @@ footer .downtext {
   font-size: 0.7em;
 }
 
-.sanitizer-section {
+.covid-section {
   height: 100%;
   width: 100%;
   background-color: #A19CAA;
 }
 
-.sanitizer-section .cover-div {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(221, 207, 207, 0.418)), to(rgba(0, 0, 0, 0.637))), url(../../images/10.jpg);
-  background-image: linear-gradient(to right, rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/10.jpg);
+.covid-section .cover-div {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(165, 144, 144, 0.418)), to(rgba(102, 94, 94, 0.637))), url("../../images/background/covid essentials.jpg");
+  background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/covid essentials.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.hospital-section {
+  height: 100%;
+  width: 100%;
+  background-color: #A19CAA;
+}
+
+.hospital-section .cover-div {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(165, 144, 144, 0.418)), to(rgba(102, 94, 94, 0.637))), url("../../images/background/hospital use.jpg");
+  background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/hospital use.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.hygiene-section {
+  height: 100%;
+  width: 100%;
+  background-color: #A19CAA;
+}
+
+.hygiene-section .cover-div {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(165, 144, 144, 0.418)), to(rgba(102, 94, 94, 0.637))), url("../../images/background/personal care or hygiene.jpg");
+  background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/personal care or hygiene.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.medical-section {
+  height: 100%;
+  width: 100%;
+  background-color: #A19CAA;
+}
+
+.medical-section .cover-div {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(165, 144, 144, 0.418)), to(rgba(102, 94, 94, 0.637))), url("../../images/background/medical equipments.jpg");
+  background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/medical equipments.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.personal-section {
+  height: 100%;
+  width: 100%;
+  background-color: #A19CAA;
+}
+
+.personal-section .cover-div {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(165, 144, 144, 0.418)), to(rgba(102, 94, 94, 0.637))), url("../../images/background/personal use.jpg");
+  background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/personal use.jpg");
   background-position: center;
   background-size: cover;
   height: 40vh;
@@ -566,23 +708,23 @@ footer .downtext {
 }
 
 .top-quote {
-  height: 2em;
-  background-color: #0000AC;
+  height: 12vh;
+  background-color: #000000;
+  color: #d1c6c6;
+  text-align: center;
+  padding: 1em;
+  border-bottom: 1px solid white;
 }
 
 .main-section {
-  height: 70vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 207, 207, 0.418)), to(rgba(0, 0, 0, 0.637))), url(../../images/25.jpg);
-  background-image: linear-gradient(rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/25.jpg);
+  height: 80vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 210, 210, 0.418)), to(rgba(97, 89, 89, 0.637))), url(../../images/25.jpg);
+  background-image: linear-gradient(rgba(245, 210, 210, 0.418), rgba(97, 89, 89, 0.637)), url(../../images/25.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .main-section .menu-div svg {
-  color: white;
-}
-
-.main-section .nav-list a {
   color: white;
 }
 
@@ -597,7 +739,8 @@ footer .downtext {
 
 .main-section .heading-div .hh1 {
   font-weight: bold;
-  color: #0000AC;
+  color: #000000;
+  text-shadow: 2px 2px #ffffff;
 }
 
 .main-section .hr-one {
@@ -607,11 +750,12 @@ footer .downtext {
 
 .main-section p {
   color: white;
+  font-size: 0.8em;
 }
 
 .main-section .see-more-btn {
   padding: 0.5em 2em;
-  background-color: #0000AC;
+  background-color: #000000;
   color: white;
 }
 
@@ -626,9 +770,14 @@ footer .downtext {
   width: 70vw;
 }
 
+.second-section p {
+  padding: 1em;
+  font-size: 0.8;
+}
+
 .third-section {
   width: 100%;
-  color: #0000AC;
+  color: #000000;
   background-color: #f8f8f8;
 }
 
@@ -644,9 +793,9 @@ footer .downtext {
   display: flex;
   width: 70vw;
   text-align: center;
-  color: #0000AC;
-  -webkit-animation: scrolling 30s infinite linear;
-          animation: scrolling 30s infinite linear;
+  color: #000000;
+  -webkit-animation: scrolling 60s infinite linear;
+          animation: scrolling 60s infinite linear;
 }
 
 @-webkit-keyframes scrolling {
@@ -684,7 +833,7 @@ footer .downtext {
 }
 
 .third-section .marquee .marquee-content .doctor p {
-  color: black;
+  color: #000000;
 }
 
 .third-section .marquee .marquee-content .doctor .quote {
@@ -697,21 +846,33 @@ footer .downtext {
 
 @media only screen and (min-width: 768px) {
   .top-quote {
-    height: 3em;
+    height: 8vh;
   }
   .main-section {
-    height: 85vh;
+    background-position: center;
+    height: 100vh;
   }
   .main-section .heading-div {
     padding-left: 7em;
     width: 70%;
-    top: 15vh;
+    top: 10vh;
+  }
+  .main-section .heading-div p {
+    font-size: 1em;
   }
   .second-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     text-align: left;
   }
   .second-section img {
     width: 35%;
+  }
+  .second-section p {
+    padding: 1em;
+    font-size: 1.2em;
+    margin: auto 0;
   }
   .third-section .marquee .marquee-content {
     width: 30%;

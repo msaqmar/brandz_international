@@ -4,7 +4,7 @@
     background-color: $sixth-colour;
 
         .cover-div{
-            background-image: linear-gradient(to right, rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/1.jpg);
+            background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url(../../images/1.jpg);
             background-position: center;
             background-size: cover;
             height: 40vh;
@@ -74,9 +74,11 @@
                 padding: 0.5em;
                 margin: 0;
             }
-            img{
-                width: 100%;
-            }
+                img{
+                    width: 100%;
+                }
+            
+            
             
                 p{
                 text-align: left;
@@ -88,13 +90,66 @@
     }
 
 
-.sanitizer-section{
+.covid-section{
     height: 100%;
     width: 100%;
     background-color: $sixth-colour;
 
     .cover-div{
-        background-image: linear-gradient(to right, rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/10.jpg);
+        background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/covid essentials.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+    }
+}
+
+.hospital-section{
+    height: 100%;
+    width: 100%;
+    background-color: $sixth-colour;
+
+    .cover-div{
+        background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/hospital use.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+    }
+}
+
+.hygiene-section{
+    height: 100%;
+    width: 100%;
+    background-color: $sixth-colour;
+
+    .cover-div{
+        background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/personal care or hygiene.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+    }
+}
+
+.medical-section{
+    height: 100%;
+    width: 100%;
+    background-color: $sixth-colour;
+
+    .cover-div{
+        background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/medical equipments.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+    }
+}
+
+
+.personal-section{
+    height: 100%;
+    width: 100%;
+    background-color: $sixth-colour;
+
+    .cover-div{
+        background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url("../../images/background/personal use.jpg");
         background-position: center;
         background-size: cover;
         height: 40vh;

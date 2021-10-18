@@ -1,15 +1,26 @@
+h1{
+    padding: 1em;
+    text-align: start;
+}
 .about-main-section{
         
 
     color: $primary-colour;
     text-align: center;
-    padding: 1em;
-    h1{
-        padding: 1em;
-        text-align: start;
-    }
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    
     img{
-        width: 20em;
+        padding: 1em;
+        margin: 0 auto;
+        width: 80vw;
+    }
+    p{
+        font-family: 'Italianno', cursive;
+        font-family: 'Source Serif Pro', serif;
+        padding: 1em;
+        font-size: 1.5em;
     }
 
     
@@ -20,12 +31,13 @@
     color: $secondary-colour;
     h1{
         text-align: right;
-        padding: 1em;
+        padding: 0 1em;
+        margin: 0;
         background-color: $primary-colour;
     }
     .service-1, .service-2, .service-3{
         padding: 1em;
-        width: 70vw;
+        width: 80vw;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -38,8 +50,9 @@
         }
         .p{
             color: $primary-colour;
-            text-align: left;
-            padding: 1em;
+            width: 100%;
+            text-align: justify;
+            padding: 1em 0;
             font-size: 1.5em;
             margin: 0 auto;
             
@@ -59,14 +72,32 @@
     }
 
     img{
-        width: 60vw;
+        width: 70vw;
         padding: 1em;
+    }
+    p{
+        font-size: 1em;
+        text-align: justify;
+        padding: 0.5em;
     }
 }
 
 
 @media screen and (min-width: 768px){
     
+
+    .about-main-section{
+      
+        flex-direction: row;
+        img{
+            width: 40vw;
+        }
+        p{
+            margin: auto 0;
+            font-size: 2em;
+        }
+        
+    }
     .about-main-section, .about-third-section{
         text-align: left;
     }
@@ -81,15 +112,32 @@
 
         .service-1, .service-2, .service-3{
             width: 80vw;
-            .img, .p{
-                width: 50%;
+            .img{
+                width: 40%;
+                margin: auto 0;
             }
             .p{
+                width: 60%;
                 margin: auto 0;
                 padding: 1em;
                 font-size: 1.5em;
             }
         }
+        
+    }
+
+    .about-third-section{
+        text-align: center;
+        padding: 2em;
+        
+        img{
+            width: 50vw;
+        }
+        p{
+            font-size: 1.5em;
+            
+        }
+
         
     }
     

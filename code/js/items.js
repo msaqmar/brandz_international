@@ -1,13 +1,7 @@
 function itemFunc(val){
     
-    if(val == "mask"){
-        window.location.href = "/code/mask.html";     
-    }
-    if(val == "sanitizer"){ 
-        
-        window.location.href = "/code/sanitizer.html"; 
-        
-    }
+        window.location.href = "/code/"+val+".html";     
+    
     
 }
 

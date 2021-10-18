@@ -58,16 +58,24 @@
             display: none;
         }
     }
-    .nav-list{
-        display: flex;
-        width: 60%;
-        float: right;
-        padding: 1em;
-        place-content: space-between;
-        a{
-          color: $primary-colour;
-        }
+    
+    .nav-list-main{
+        width: 100%;
+        background-color: $primary-colour;
+        .nav-list{
+            display: flex;
+            margin: 0;
+            justify-content: right;
+            padding: 0.5em 2em;
+            font-size: 1.2em;
+            a{
+                padding-left: 10vw;
+                color: $secondary-colour;
+            }
+        
     }
+}
+
 
     .navlist{
         display: none;

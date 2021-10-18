@@ -10,8 +10,14 @@
 
 
 .top-quote{
-    height: 2em;
+    height: 12vh;
     background-color: $primary-colour;
+    color: $ternary-colour;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 1px solid $secondary-colour;
+    
+    
 }
 
 
@@ -19,8 +25,8 @@
 ///////////MAIN SECTIONS //////////////////////////////////
 
 .main-section{
-    height: 70vh;
-    background-image: linear-gradient( rgba(221, 207, 207, 0.418), rgba(0, 0, 0, 0.637)), url(../../images/25.jpg);
+    height: 80vh;
+    background-image: linear-gradient( rgba(245, 210, 210, 0.418), rgba(97, 89, 89, 0.637)), url(../../images/25.jpg);
     background-size: cover;
     background-position: center;
 
@@ -31,11 +37,7 @@
         }
     }
 
-    .nav-list{
-        a{
-          color: $secondary-colour;
-        }
-    }
+    
 
 
 
@@ -54,6 +56,7 @@
         .hh1{
             font-weight: bold;
             color: $primary-colour;
+            text-shadow: 2px 2px #ffffff;
          
             
         }
@@ -66,6 +69,7 @@
 
     p{
         color: $secondary-colour;
+        font-size: 0.8em;
         // padding-left: 1em;
     }
 
@@ -91,6 +95,10 @@
     img{
         width: 70vw;
     }
+    p{
+        padding: 1em;
+        font-size: 0.8;
+    }
 }
 
 
@@ -113,7 +121,7 @@
             width: 70vw;
             text-align: center;
             color: $primary-colour;
-            animation: scrolling 30s infinite linear;
+            animation: scrolling 60s infinite linear;
 
             @keyframes scrolling {
                 0%{
@@ -139,7 +147,7 @@
 
                 
                 p{
-                    color: $ternary-colour;
+                    color: $primary-colour;
                 }
 
                 .quote{
@@ -169,25 +177,38 @@
 @media only screen and (min-width: 768px){
     
         .top-quote{
-            height: 3em;
+            height: 8vh;
         }
 
         .main-section{
-            height: 85vh;
+            background-position: center;
+            height: 100vh;
             .heading-div{
                 padding-left: 7em;
                 width: 70%;
-                top: 15vh;
+                top: 10vh;
+
+                p{
+                    
+                    font-size: 1em;
+                }
 
                 
             }
         }
 
         .second-section{
+            display: flex;
             text-align: left;
             img{
                 width: 35%;
             }
+            p{
+                padding: 1em;
+                font-size: 1.2em;
+                margin: auto 0;
+            }
+            
         }
 
         .third-section{
