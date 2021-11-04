@@ -10,12 +10,13 @@
 
 
 .top-quote{
-    height: 12vh;
-    background-color: $primary-colour;
-    color: $ternary-colour;
+    height: 5vh;
+    background-color: $primary-color;
+    color: $secondary-color;
+    opacity: 90%;
     text-align: center;
     padding: 1em;
-    border-bottom: 1px solid $secondary-colour;
+    font-size: 0.6rem;
     
     
 }
@@ -33,7 +34,7 @@
     .menu-div{
         svg{
             
-            color: $secondary-colour;
+            color: $primary-color;
         }
     }
 
@@ -55,7 +56,7 @@
 
         .hh1{
             font-weight: bold;
-            color: $primary-colour;
+            color: $primary-color;
             text-shadow: 2px 2px #ffffff;
          
             
@@ -68,7 +69,7 @@
     }
 
     p{
-        color: $secondary-colour;
+        color: $secondary-color;
         font-size: 0.8em;
         // padding-left: 1em;
     }
@@ -76,8 +77,8 @@
 
     .see-more-btn{
         padding: 0.5em 2em;
-        background-color: $primary-colour;
-        color: $secondary-colour;
+        background-color: $primary-color;
+        color: $secondary-color;
         
     }
     
@@ -90,7 +91,7 @@
     width: 100%;
     text-align: center;
     padding: 2em;
-    background-color: $nineth-colour;
+    background-color: $forth-color;
 
     img{
         width: 70vw;
@@ -106,8 +107,8 @@
 
  .third-section{
     width: 100%;
-    color: $primary-colour;
-    background-color: $nineth-colour;
+    color: $primary-color;
+    background-color: $forth-color;
 
     
     .marquee{
@@ -120,7 +121,7 @@
             display: flex;
             width: 70vw;
             text-align: center;
-            color: $primary-colour;
+            color: $primary-color;
             animation: scrolling 60s infinite linear;
 
             @keyframes scrolling {
@@ -138,16 +139,16 @@
                 width: 80%;
                 margin: 1em 2em;
                 flex-shrink: 0;
-                border: 1px solid $fifth-colour;
+                border: 1px solid $forth-color;
                 padding: 0 1em;
                 text-align: left;
-                background-color: $eightth-colour;
+                background-color: $forth-color;
                 // white-space: nowrap;
                 overflow: wrap;
 
                 
                 p{
-                    color: $primary-colour;
+                    color: $primary-color;
                 }
 
                 .quote{

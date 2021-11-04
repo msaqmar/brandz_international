@@ -1,57 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Source+Serif+Pro&display=swap');
-$primary-colour: #0000AC;
-// $primary-colour: #000000;
-$secondary-colour: white;
-$ternary-colour: rgb(209, 198, 198);
-$forth-colour: rgb(186, 248, 248);
-$fifth-colour: rgb(153, 139, 139);
-$sixth-colour: #A19CAA;
-$seventh-colour: #fdfdfd;
-$eightth-colour: #a4a4e7;
-$nineth-colour: #f8f8f8;
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Montserrat&family=Poppins&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
 
-$font-fam: 'Poppins', sans-serif;
+$primary-color: #00203fff;
+$secondary-color: #adefd1ff;
+$third-color: white;
+$forth-color: black;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+}
+
 
 ul{
     list-style-type: none;
 }
 a{
     text-decoration: none;
-    color: $secondary-colour;
+    color: $secondary-color;
 
     &:hover{
-        color: $secondary-colour;
+        color: $secondary-color;
     }
 }
 .active{
-    color: $forth-colour;
+    color: $forth-color;
     font-size: 1.3em;
     font-weight: bold;
 }
 
-body{
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font-fam;
 
-}
 
 .read-more-btn{
     padding: 0.5em 1em;
-    background-color: $primary-colour;
-    color: $secondary-colour;
+    background-color: $primary-color;
+    color: $secondary-color;
 
     &:hover{
-        background-color: $forth-colour;
+        background-color: $forth-color;
     }
     
 }
 
 .brandzname{
-    color: $seventh-colour;
+    color: $forth-color;
 }
 
 
@@ -64,7 +58,7 @@ body{
     .active{
         text-decoration: underline;
         font-size: 1em;
-        color: $secondary-colour;
+        color: $secondary-color;
     }
     
 }
