@@ -13,53 +13,62 @@
 
 <body>
 
-    <!---------------- FIRST SECTION------------ -->
-
-    <div class="main-section">
-        <header>
-            <div class="top-quote">
-                <span>We supply A to Z (All) of Medical Equipments of all quality to anywhere in all of India</span>
-            </div>
-            <nav>
-                <div class="menu-div">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list hambmenu" viewBox="0 0 16 16" onclick="openMenuFunc()">
+        <div class="top-quote">
+            <span>One of the largest medical equipment suppliers in the world</span>
+        </div>
+        
+            <div class="menu-div">
+                <img src="../images/medlogo.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list hambmenu" viewBox="0 0 16 16" onclick="openMenuFunc()">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
+                </svg>
+
+                <div class="navlist">
+                    <img src="../images/logolite.png" alt="">
+                    <svg  class="cross-icon" onclick="closeFunc()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                        <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                    </svg>
+            
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a class="" href="product.html">Products</a></li>
+                        <li><a class="" href="about.html">About us</a></li>
+                        <li><a class="" href="contact.html">Contact us</a></li>
+                    </ul>
                 </div>
-                
-                <ul class="navlist">
-                    <img class="cross-icon" src="../images/icons/Icon metro-cross.svg" alt="" onclick="closeFunc()">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a class="" href="product.html">Products</a></li>
-                    <li><a class="" href="about.html">About us</a></li>
-                    <li><a class="" href="contact.html">Contact us</a></li>
-                </ul>
-                <div class="nav-list-main">
                 <div class="nav-list">
                     <a class="active" href="index.html">Home</a>
                     <a class="" href="product.html">Products</a>
                     <a class="" href="about.html">About us</a>
                     <a class="" href="contact.html">Contact us</a>
                 </div>
-            </div>
-            </nav>
-        </header>
+                </div>
+           
+            
+           
+
+    <!---------------- FIRST SECTION------------ -->
+
+    <div class="main-section">
+        
         
         <div class="heading-div">
             <h1  class="hh1"> Medical Equipment Supplier & Distributors </h1>
         
-            <hr class="hr-one">
-    
+           
             <p>At Brandz, we are committed to provide all types of quality medical equipment that is of excellent design and classic craftmanship at better wholesale price. 
                 We supply our products to anywhere across India. 
                 
                 </p>
             
-            <hr class="hr-one">
+         
             <div style="text-align:center">
-                <button class="btn read-more-btn mt-4" onclick="location.href = '/code/about.html'">See more</button>
-            </div></div>
+                <button class="read-more-btn" onclick="location.href = '/code/about.html'">See more</button>
+            </div>
         </div>
+        </div>
+    </div>
 
 
 <!------------------- SECOND SECTION ---------------->
@@ -69,7 +78,10 @@
     <div class="second-section">
         <img src="../images/24.jpg" alt="supply">
         <p>Our products have been trusted by many respected and highly qualified doctors to whom we have served continously with passion and care. 
-            Refer our products page to know what products we supply.</p>
+            Refer our products page to know what products we supply.
+        <br>
+            <button class="read-more-btn">View Products</button>
+        </p>
 
     </div>
 
@@ -77,9 +89,28 @@
 <!------------------- THIRD SECTION ---------------->
     
     <div class="third-section">
-        <h2>Experienced Doctors about us</h2>
 
-        <div class="marquee">
+
+        <div class="third-section-img">
+            <img src="../images/goods.jpg" alt="">
+        </div>
+
+        <div class="third-section-content">
+            <h1>About us</h1>
+            <p>We are one of the biggest suppliers of medical equipments in the world. We have around 200+ regular customers, who are doctors, hospitals, clinics, wholesalers, retailers and individuals. We entertain every customers, you can join or community by contacting us now.</p>
+            <button class="view-more-btn">Know more</button>
+        </div>
+
+
+        
+
+
+
+
+
+
+
+        <!-- <div class="marquee">
             
         <div class="marquee-content">
             <div class="doctor">
@@ -115,8 +146,27 @@
             
             
         </div>
-        </div>
+        </div> -->
     </div>
+
+
+
+    <div class="forth-section">
+           
+        <h1>Our products</h1>
+        <div class="product-gallery">
+            <img src="../images/2.jpg" alt="">
+            <img src="../images/5.jpg" alt="">
+            <img src="../images/6.jpg" alt="">
+            <img src="../images/7.jpg" alt="">
+            <img src="../images/8.jpg" alt="">
+            <img src="../images/10.jpg" alt="">
+        </div>
+
+        <button class="read-more-btn">View more</button>
+
+    </div>
+
 
 
 <!-------------------FOOTER -------------------------------->
