@@ -807,11 +807,7 @@ h1 {
 }
 
 .second-section p button {
-  margin-top: 3rem;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 1rem;
 }
 
 .third-section {
