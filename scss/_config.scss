@@ -17,9 +17,7 @@ $sixth-color: rgba(255, 255, 255, 0.637);
 
 
 
-.active{
-    text-decoration: underline;
-}
+
 
 
 
@@ -60,7 +58,104 @@ $sixth-color: rgba(255, 255, 255, 0.637);
 }
 
 
-@media only screen and (min-width: 768px){
+
+
+footer{
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    .foot-sec-1{
+        min-width: 20%;
+        max-width: 50%;
+        margin: auto;
+
+        ul{
+            list-style-type: none;
+            padding: 0;
+            li{
+                a{
+                    font-size: 0.8rem;
+                    text-decoration: none;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+
+    .foot-sec-2{
+        min-width: 20%;
+        max-width: 50%;
+        margin: auto;
+        .numb{
+            svg{
+                width: 1rem;
+            }
+            font-size: 0.8rem;
+        }
+    }
+
+    .foot-sec-3{
+        min-width: 20%;
+        max-width: 50%;
+        margin: auto;
+        ul{
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+
+            li{
+                width: 2.5rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .foot-sec-4{
+        min-width: 20%;
+        max-width: 50%;
+        margin: auto;
+        
+        .office-address{
+            svg{
+                width: 1rem;
+                display: inline;
+            }
+            p{
+                display: inline;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .foot-sec-5{
+        width: 100%;
+        margin: auto;
+        padding-top: 0.5rem;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+
+    
+}     
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 800px){
     
     a:hover{
         text-decoration: underline;
@@ -71,5 +166,7 @@ $sixth-color: rgba(255, 255, 255, 0.637);
         font-size: 1em;
         color: $secondary-color;
     }
+
+    
     
 }
