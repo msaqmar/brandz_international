@@ -1,13 +1,19 @@
 .mask-section{
     height: 100%;
     width: 100%;
-    background-color: $forth-color;
+    background-color: $primary-color;
 
         .cover-div{
-            background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url(../../images/1.jpg);
-            background-position: center;
+            background: 
+            linear-gradient(
+                to right,
+                rgba(rgb(173, 239, 209),0.9),
+                rgba(rgb(173, 239, 209),0.6),
+                ), url('../../images/1.jpg') center;
+            background-repeat: no-repeat;
             background-size: cover;
             height: 40vh;
+            color: $primary-color;
         
             
     }
@@ -26,8 +32,9 @@
         .search-input{
             font-size: 1.2em;
             padding: 0.5em;
-            border-radius: 1em;
-            border: 1px solid $forth-color;
+            border-radius: 1rem;
+            background-color: $primary-color;
+            color: $secondary-color;
             width: 60%;
             position: relative;
             top: 0.5em;
@@ -55,21 +62,24 @@
     .item-div{
         margin: 0 auto;
         padding: 0 0 2em 0;
-        width: 70vw;
+        width: 80vw;
         height: 100%;
         position: relative;
         top: -10vh;
-        border: 1px solid $forth-color;
-        background-color: $secondary-color;
+        background-color: $third-color;
         text-align: center;
         display: flex;
         flex-direction: column;
+        li{
+            list-style-type: none;
+        }
         
         .item{
             padding: 1em;
             border: 1px solid $forth-color;
             margin: 2em auto 0 auto;
             width: 80%;
+            
             h3{
                 padding: 0.5em;
                 margin: 0;

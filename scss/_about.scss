@@ -1,26 +1,49 @@
-h1{
-    padding: 1em;
-    text-align: start;
+.about-body{
+    background-color: $primary-color;
+
+    .menu-div{
+        background-color: rgba(0, 31, 63, 0.623);
+
+        #about-menu-icon{
+            color: $secondary-color;
+        }
+
+        .nav-list{
+            li{
+                a{
+                    
+                color: $secondary-color;
+                }
+            }
+        }
+    }
 }
+
+
+
+
 .about-main-section{
+    background: 
+            linear-gradient(
+                to right,
+                rgba(rgb(173, 239, 209),0.9),
+                rgba(rgb(173, 239, 209),0.6),
+            ),
+            url('../../images/100.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
         
 
     color: $primary-color;
     text-align: center;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    
-    img{
-        padding: 1em;
-        margin: 0 auto;
-        width: 80vw;
+    padding: 1rem;
+    h1{
+        padding: 1rem;
+        text-align: center;
     }
+   
     p{
-        font-family: 'Italianno', cursive;
-        font-family: 'Source Serif Pro', serif;
-        padding: 1em;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     
@@ -29,31 +52,40 @@ h1{
 
 .about-sec-section{
     color: $secondary-color;
+    background: 
+            linear-gradient(
+                to right,
+                rgba(rgb(0, 32, 63),1.0),
+                rgba(rgb(0, 32, 63),0.8),
+            ),
+            url('../../images/19.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1{
-        text-align: right;
-        padding: 0 1em;
+        padding: 1rem;
         margin: 0;
-        background-color: $primary-color;
     }
     .service-1, .service-2, .service-3{
-        padding: 1em;
-        width: 80vw;
+        padding: 1rem;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         
         .img{
             width: 100%;
+            text-align: center;
             img{
-                width: 100%;
+                border-bottom: 4px solid $secondary-color;
+                width: 80%;
             }
         }
         .p{
-            color: $primary-color;
+            color: $secondary-color;
             width: 100%;
-            text-align: justify;
+            text-align: center;
             padding: 1em 0;
-            font-size: 1.5em;
+            font-size: 1rem;
             margin: 0 auto;
             
         }
@@ -65,18 +97,24 @@ h1{
 .about-third-section{
     color: $primary-color;
     text-align: center;
+    padding: 1rem;
+    background: 
+            linear-gradient(
+                to right,
+                rgba(rgb(173, 239, 209),0.9),
+                rgba(rgb(173, 239, 209),0.6),
+            ),
+            url('../../images/20.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     h1{
         text-align: left;
-        padding: 1em;
+        padding: 1rem;
     }
 
-    img{
-        width: 70vw;
-        padding: 1em;
-    }
     p{
-        font-size: 1em;
+        font-size: 1rem;
         text-align: justify;
         padding: 0.5em;
     }
@@ -87,14 +125,11 @@ h1{
     
 
     .about-main-section{
+        height: 50vh;
       
-        flex-direction: row;
-        img{
-            width: 40vw;
-        }
         p{
-            margin: auto 0;
-            font-size: 2em;
+            text-align: center;
+            font-size: 2rem;
         }
         
     }

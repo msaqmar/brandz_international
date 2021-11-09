@@ -278,51 +278,57 @@ footer .foot-sec-5 {
   }
 }
 
-h1 {
-  padding: 1em;
-  text-align: start;
+.about-body {
+  background-color: #00203fff;
+}
+
+.about-body .menu-div {
+  background-color: rgba(0, 31, 63, 0.623);
+}
+
+.about-body .menu-div #about-menu-icon {
+  color: #adefd1ff;
+}
+
+.about-body .menu-div .nav-list li a {
+  color: #adefd1ff;
 }
 
 .about-main-section {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(173, 239, 209, 0.9)), to(rgba(173, 239, 209, 0.6))), url("../../images/100.jpg") center;
+  background: linear-gradient(to right, rgba(173, 239, 209, 0.9), rgba(173, 239, 209, 0.6)), url("../../images/100.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #00203fff;
   text-align: center;
-  padding: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding: 1rem;
 }
 
-.about-main-section img {
-  padding: 1em;
-  margin: 0 auto;
-  width: 80vw;
+.about-main-section h1 {
+  padding: 1rem;
+  text-align: center;
 }
 
 .about-main-section p {
-  font-family: 'Italianno', cursive;
-  font-family: 'Source Serif Pro', serif;
-  padding: 1em;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .about-sec-section {
   color: #adefd1ff;
+  background: -webkit-gradient(linear, left top, right top, from(#00203f), to(rgba(0, 32, 63, 0.8))), url("../../images/19.jpg") center;
+  background: linear-gradient(to right, #00203f, rgba(0, 32, 63, 0.8)), url("../../images/19.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-sec-section h1 {
-  text-align: right;
-  padding: 0 1em;
+  padding: 1rem;
   margin: 0;
-  background-color: #00203fff;
 }
 
 .about-sec-section .service-1, .about-sec-section .service-2, .about-sec-section .service-3 {
-  padding: 1em;
-  width: 80vw;
+  padding: 1rem;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,55 +341,51 @@ h1 {
 
 .about-sec-section .service-1 .img, .about-sec-section .service-2 .img, .about-sec-section .service-3 .img {
   width: 100%;
+  text-align: center;
 }
 
 .about-sec-section .service-1 .img img, .about-sec-section .service-2 .img img, .about-sec-section .service-3 .img img {
-  width: 100%;
+  border-bottom: 4px solid #adefd1ff;
+  width: 80%;
 }
 
 .about-sec-section .service-1 .p, .about-sec-section .service-2 .p, .about-sec-section .service-3 .p {
-  color: #00203fff;
+  color: #adefd1ff;
   width: 100%;
-  text-align: justify;
+  text-align: center;
   padding: 1em 0;
-  font-size: 1.5em;
+  font-size: 1rem;
   margin: 0 auto;
 }
 
 .about-third-section {
   color: #00203fff;
   text-align: center;
+  padding: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(173, 239, 209, 0.9)), to(rgba(173, 239, 209, 0.6))), url("../../images/20.jpg") center;
+  background: linear-gradient(to right, rgba(173, 239, 209, 0.9), rgba(173, 239, 209, 0.6)), url("../../images/20.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-third-section h1 {
   text-align: left;
-  padding: 1em;
-}
-
-.about-third-section img {
-  width: 70vw;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .about-third-section p {
-  font-size: 1em;
+  font-size: 1rem;
   text-align: justify;
   padding: 0.5em;
 }
 
 @media screen and (min-width: 768px) {
   .about-main-section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .about-main-section img {
-    width: 40vw;
+    height: 50vh;
   }
   .about-main-section p {
-    margin: auto 0;
-    font-size: 2em;
+    text-align: center;
+    font-size: 2rem;
   }
   .about-main-section, .about-third-section {
     text-align: left;
@@ -634,15 +636,16 @@ body {
 .mask-section {
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #00203fff;
 }
 
 .mask-section .cover-div {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(165, 144, 144, 0.418)), to(rgba(102, 94, 94, 0.637))), url(../../images/1.jpg);
-  background-image: linear-gradient(to right, rgba(165, 144, 144, 0.418), rgba(102, 94, 94, 0.637)), url(../../images/1.jpg);
-  background-position: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(173, 239, 209, 0.9)), to(rgba(173, 239, 209, 0.6))), url("../../images/1.jpg") center;
+  background: linear-gradient(to right, rgba(173, 239, 209, 0.9), rgba(173, 239, 209, 0.6)), url("../../images/1.jpg") center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;
+  color: #00203fff;
 }
 
 .srch-div .srch-icon {
@@ -655,8 +658,9 @@ body {
 .srch-div .search-input {
   font-size: 1.2em;
   padding: 0.5em;
-  border-radius: 1em;
-  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: #00203fff;
+  color: #adefd1ff;
   width: 60%;
   position: relative;
   top: 0.5em;
@@ -680,12 +684,11 @@ body {
 .item-div {
   margin: 0 auto;
   padding: 0 0 2em 0;
-  width: 70vw;
+  width: 80vw;
   height: 100%;
   position: relative;
   top: -10vh;
-  border: 1px solid black;
-  background-color: #adefd1ff;
+  background-color: white;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,6 +697,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.item-div li {
+  list-style-type: none;
 }
 
 .item-div .item {
@@ -826,7 +833,7 @@ body {
   margin: 0;
   padding: 1rem;
   position: relative;
-  top: 10vh;
+  top: 20%;
 }
 
 .main-section .heading-div .hh1 {
@@ -954,7 +961,7 @@ body {
   .main-section .heading-div {
     padding-left: 7em;
     width: 70%;
-    top: 10vh;
+    top: 25%;
   }
   .main-section .heading-div p {
     font-size: 1em;
