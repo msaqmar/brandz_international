@@ -824,7 +824,7 @@ body {
 }
 
 .main-section {
-  height: 80vh;
+  height: 60vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url("../../images/25.jpg") center top;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../../images/25.jpg") center top;
   background-repeat: no-repeat;
