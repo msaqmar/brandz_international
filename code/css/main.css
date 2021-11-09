@@ -61,9 +61,10 @@ footer {
 }
 
 footer .foot-sec-1 {
-  min-width: 20%;
+  min-width: 25%;
   max-width: 50%;
   margin: auto;
+  padding: 0.5rem;
 }
 
 footer .foot-sec-1 ul {
@@ -78,9 +79,10 @@ footer .foot-sec-1 ul li a {
 }
 
 footer .foot-sec-2 {
-  min-width: 20%;
+  min-width: 25%;
   max-width: 50%;
   margin: auto;
+  padding: 0.5rem;
 }
 
 footer .foot-sec-2 .numb {
@@ -92,8 +94,9 @@ footer .foot-sec-2 .numb svg {
 }
 
 footer .foot-sec-3 {
-  min-width: 20%;
+  min-width: 25%;
   max-width: 50%;
+  padding: 0.5rem;
   margin: auto;
 }
 
@@ -111,8 +114,9 @@ footer .foot-sec-3 ul li {
 }
 
 footer .foot-sec-4 {
-  min-width: 20%;
+  min-width: 25%;
   max-width: 50%;
+  padding: 0.5rem;
   margin: auto;
 }
 
