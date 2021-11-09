@@ -61,8 +61,8 @@ $sixth-color: rgba(255, 255, 255, 0.637);
 
 
 footer{
-    background-color: $secondary-color;
-    color: $primary-color;
+    background-color: $forth-color;
+    color: $secondary-color;
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -81,7 +81,7 @@ footer{
                 a{
                     font-size: 0.8rem;
                     text-decoration: none;
-                    color: $primary-color;
+                    color: $secondary-color;
                 }
             }
         }

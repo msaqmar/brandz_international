@@ -223,7 +223,15 @@
 
 
 .fifth-section{
-    background-color: $primary-color;
+    background: 
+            linear-gradient(
+                to right,
+                rgba(rgb(8, 26, 66),0.9),
+                rgba(rgb(8, 26, 66),0.6),
+            ),
+            url('../../images/contact.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: $secondary-color;
     text-align: center;
     padding: 3rem;

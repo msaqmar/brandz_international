@@ -20,21 +20,7 @@
 
     <div class="product-category-page">
 
-        <div class="nav-list-main">
-            <div class="nav-list">
-                <a class="" href="index.html">Home</a>
-                <a class="active" href="product.html">Products</a>
-                <a class="" href="about.html">About us</a>
-                <a class="" href="contact.html">Contact us</a>
-            </div>
-        </div>
-        <header class="product-header">
-            <div class="srch">
-            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" onclick="showSearch()">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg>
-              <input id="srch-inp" class=" search-inp" type="text" placeholder="Search" onkeyup="searchFunc()">
-            </div>
+            
 
             <div class="menu-div">
                 <img src="../images/medlogo.png" alt="">
@@ -63,60 +49,63 @@
                         <li><a class="" href="contact.html">Contact us</a></li>
                 </div>
                 </div>
-        </header>
+
+                <!-- <div class="product-header">
+                <div class="srch">
+                    <input id="srch-inp" class=" search-inp" type="text" placeholder="Search" onkeyup="searchFunc()">
+                   
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" onclick="showSearch()">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                       </div>
+                </div> -->
         
         
     <div class="product-main-section">
-        <h2>Catalogue</h2>
+        <h2>Products Catalogue</h2>
         
         <ul id="myUL" class=" product-main-div">
-            <li class="category-div">
-                <div class="img-div">
-                    <img src="../images/2.jpg" alt="">
+            
+            <li class="category-div" onclick="itemFunc('mask')">
+                <div id="category-div-1">
+                    <h3>Masks</h3>
                 </div>
-                <h3>Masks</h3>
-                        <button class="btn read-more-btn" onclick="itemFunc('mask')">View items</button>
                  
             </li>
-            <li class="category-div">
-                <div class="img-div">
-                    <img src="../images/3.jpg" alt="">
-                </div>
+            <li class="category-div" onclick="itemFunc('covid')">
+                <div id="category-div-2" >
+                    
                 <h3>Covid Essential</h3>
-                        <button class="btn read-more-btn" onclick="itemFunc('covid')">View items</button>
-                 
-            </li>
-            <li class="category-div">
-                <div class="img-div">
-                    <img src="../images/8.jpg" alt="">
                 </div>
+                        
+            </li>
+            <li class="category-div" onclick="itemFunc('hospital')">
+               <div id="category-div-3">
+                    
                 <h3>Hospital use</h3>
-                        <button class="btn read-more-btn" onclick="itemFunc('hospital')">View items</button>
-                 
+               </div>
+                        
             </li>
-            <li class="category-div">
-                <div class="img-div">
-                    <img src="../images/9.jpg" alt="">
-                </div>
+            <li class="category-div"  onclick="itemFunc('medical')">
+                <div id="category-div-4">
+                    
                 <h3>Medical Equipments</h3>
-                        <button class="btn read-more-btn" onclick="itemFunc('medical')">View items</button>
-                 
-            </li>
-            <li class="category-div">
-                <div class="img-div">
-                    <img src="../images/6.jpg" alt="">
                 </div>
+                     
+            </li>
+            <li class="category-div" onclick="itemFunc('hygiene')">
+               <div id="category-div-5">
+                    
                 <h3>Personal care and Hygiene</h3>
-                        <button class="btn read-more-btn" onclick="itemFunc('hygiene')">View items</button>
+               </div>
                  
             </li>
-            <li class="category-div">
-                <div class="img-div">
-                    <img src="../images/10.jpg" alt="">
-                </div>
+            <li class="category-div"  onclick="itemFunc('personal')">
+                <div id="category-div-6">
+                    
                 <h3>Personal use</h3>
-                        <button class="btn read-more-btn" onclick="itemFunc('personal')">View items</button>
-                 
+                </div>
+                        
             </li>
             <p id="not-found">Results not found</p>
         </ul>

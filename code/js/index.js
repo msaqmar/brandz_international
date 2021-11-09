@@ -8,6 +8,12 @@ function openMenuFunc(){
 
 function showSearch(){
     document.querySelector("#srch-inp").style.display = "inline-block";
+    
+}
+
+function closeShowSearch(){
+        document.querySelector("#srch-inp").style.display = "none";
+
 }
 
 function searchFunc() {

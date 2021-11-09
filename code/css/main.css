@@ -46,8 +46,8 @@
 }
 
 footer {
-  background-color: #adefd1ff;
-  color: #00203fff;
+  background-color: black;
+  color: #adefd1ff;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +74,7 @@ footer .foot-sec-1 ul {
 footer .foot-sec-1 ul li a {
   font-size: 0.8rem;
   text-decoration: none;
-  color: #00203fff;
+  color: #adefd1ff;
 }
 
 footer .foot-sec-2 {
@@ -493,12 +493,16 @@ h1 {
   }
 }
 
+body {
+  background-color: #adefd1ff;
+}
+
 .product-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .srch {
@@ -507,20 +511,22 @@ h1 {
 
 .srch .search-icon {
   color: #00203fff;
-  width: 2em;
+  width: 2rem;
 }
 
 .srch .search-inp {
-  font-size: 1.2em;
-  padding: 0.5em;
-  border-radius: 1em;
-  border: 1px solid black;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0.1px black;
   width: 70%;
+  background-color: #00203fff;
+  color: #adefd1ff;
   display: none;
 }
 
 .product-main-section h2 {
-  padding: 1em;
+  padding: 1rem;
   color: #00203fff;
 }
 
@@ -537,29 +543,73 @@ h1 {
 }
 
 .product-main-section .product-main-div .category-div {
-  width: 70%;
-  margin: 0.5em auto;
-  text-align: center;
-  padding-bottom: 2em;
-  display: block;
-  border: 1px solid black;
-}
-
-.product-main-section .product-main-div .category-div .img-div {
-  margin: 0 auto;
-  width: 80%;
-  padding: 2em 0 1em 0;
-}
-
-.product-main-section .product-main-div .category-div .img-div img {
   width: 100%;
-  height: 60%;
-  margin-bottom: 1em;
+  height: 50vh;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  border-bottom: 5px solid #00203fff;
+  cursor: pointer;
+  color: #adefd1ff;
 }
 
-.product-main-section .product-main-div .category-div .img-div span {
-  font-size: 2em;
-  color: #00203fff;
+.product-main-section .product-main-div .category-div div {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
+}
+
+.product-main-section .product-main-div .category-div div h3 {
+  position: relative;
+  top: 50%;
+}
+
+.product-main-section .product-main-div .category-div div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.product-main-section .product-main-div #category-div-1 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 26, 66, 0.9)), to(rgba(8, 26, 66, 0.6))), url("../../images/2.jpg") center;
+  background: linear-gradient(to right, rgba(8, 26, 66, 0.9), rgba(8, 26, 66, 0.6)), url("../../images/2.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-main-section .product-main-div #category-div-2 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 26, 66, 0.9)), to(rgba(8, 26, 66, 0.6))), url("../../images/3.jpg") center;
+  background: linear-gradient(to right, rgba(8, 26, 66, 0.9), rgba(8, 26, 66, 0.6)), url("../../images/3.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-main-section .product-main-div #category-div-3 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 26, 66, 0.9)), to(rgba(8, 26, 66, 0.6))), url("../../images/8.jpg") center;
+  background: linear-gradient(to right, rgba(8, 26, 66, 0.9), rgba(8, 26, 66, 0.6)), url("../../images/8.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-main-section .product-main-div #category-div-4 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 26, 66, 0.9)), to(rgba(8, 26, 66, 0.6))), url("../../images/9.jpg") center;
+  background: linear-gradient(to right, rgba(8, 26, 66, 0.9), rgba(8, 26, 66, 0.6)), url("../../images/9.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-main-section .product-main-div #category-div-5 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 26, 66, 0.9)), to(rgba(8, 26, 66, 0.6))), url("../../images/6.jpg") center;
+  background: linear-gradient(to right, rgba(8, 26, 66, 0.9), rgba(8, 26, 66, 0.6)), url("../../images/6.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-main-section .product-main-div #category-div-6 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 26, 66, 0.9)), to(rgba(8, 26, 66, 0.6))), url("../../images/10.jpg") center;
+  background: linear-gradient(to right, rgba(8, 26, 66, 0.9), rgba(8, 26, 66, 0.6)), url("../../images/10.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #not-found {
@@ -577,7 +627,7 @@ h1 {
         flex-wrap: wrap;
   }
   .product-main-section .product-main-div .category-div {
-    width: 30%;
+    width: 33.33%;
   }
 }
 
@@ -878,7 +928,10 @@ h1 {
 }
 
 .fifth-section {
-  background-color: #00203fff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 26, 66, 0.9)), to(rgba(8, 26, 66, 0.6))), url("../../images/contact.jpg") center;
+  background: linear-gradient(to right, rgba(8, 26, 66, 0.9), rgba(8, 26, 66, 0.6)), url("../../images/contact.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #adefd1ff;
   text-align: center;
   padding: 3rem;
